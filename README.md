@@ -67,6 +67,33 @@ curl -X POST https://<your-ngrok-url>/api/generate \
 ```
 📝 Note: Replace the `https://<your-ngrok-url>` url with the actual `ngrok`will provide like `https://5483-3478-2345.ngrok-free.app`
 
+---
+
+## 📱 Android Integration: Jetson Kokoro TTS App
+
+You can connect this **kokoro_tts** server with the Android client app from the following repository:  
+👉 [Jetson_App (kokoro_tts branch)](https://github.com/farmaker47/Jetson_App/tree/kokoro_tts)
+
+### 🔗 How it works
+
+The Android app sends POST requests to the kokoro_tts server's `/api/generate` endpoint — just like the `curl` example in the README. This makes it easy to use the TTS engine on your mobile device via a responsive UI.
+
+### ✅ What you need to do:
+
+1. **Run the kokoro_tts server** on a machine (locally or hosted).
+2. **Expose it using [ngrok](https://ngrok.com/)** or any other tunneling tool.
+3. **Set the base URL** in the Android app's NetworkModule file to match your server URL (e.g., `https://your-ngrok-url/api/generate`).
+4. **Build and run** the Android app to start sending TTS prompts directly from your device!
+
+> 💡 Great for real-time speech generation, prototyping voice interfaces, and testing multilingual support on mobile!
+
+---
+
+📂 Check out the Android repo here:  
+[https://github.com/farmaker47/Jetson_App/tree/kokoro_tts](https://github.com/farmaker47/Jetson_App/tree/kokoro_tts)
+
+---
+
 ## 💡 Credits
 
 This repository is built on top of the incredible [Kokoro TTS model](https://huggingface.co/hexgrad/Kokoro-82M) by **hexgrad**. 
