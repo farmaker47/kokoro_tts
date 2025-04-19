@@ -26,6 +26,21 @@ An elegant and efficient **Text-To-Speech (TTS)** implementation powered by the 
 
 ---
 
+## ⚡️ Performance Tip: Use a GPU! 🖥️💨
+
+Running **kokoro_tts** on a **GPU** 🖥️ will significantly speed up the text-to-speech generation process.
+
+- 🚀 Faster inference times
+- 🎯 More responsive real-time applications
+- 🔊 Smoother experience for generating longer audio clips
+
+If you're working on a local machine, make sure your environment is set up with CUDA and a compatible GPU.  
+For cloud deployments, platforms like Google Colab, AWS, and Paperspace offer GPU-backed runtimes.
+
+> 💡 Tip: CPU works fine too, but for blazing fast results, GPU is the way to go!
+
+---
+
 ## 🚀 Getting Started
 
 ### 🧰 Installation
