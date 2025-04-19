@@ -1,0 +1,7 @@
+fastapi 
+uvicorn 
+kokoro>=0.9.4 
+soundfile 
+numpy 
+nest_asyncio 
+pyngrok

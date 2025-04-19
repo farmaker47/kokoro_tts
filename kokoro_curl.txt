@@ -1,0 +1,4 @@
+curl -X POST  https://50fe-34-125-8-203.ngrok-free.app/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "We use this data to help us to better understand our audiences and to improve and personalise your experience. We also use this data to manage the info shown on our services", "voice": "af_heart"}' \
+  --output test_audio_heart.wav
